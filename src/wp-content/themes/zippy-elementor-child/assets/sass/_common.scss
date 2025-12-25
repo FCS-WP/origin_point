@@ -1,0 +1,45 @@
+#header {
+  .jkit-hamburger-menu,
+  .jkit-close-menu {
+    &:focus {
+      background: none;
+    }
+  }
+
+  .elementor-menu-cart__toggle .elementor-button svg {
+    @media screen and (max-width: 767px) {
+      fill: var( --e-global-color-primary );
+    }
+  }
+  .menu-item-has-children{
+    svg{
+      border: none;
+    }
+  }
+}
+
+
+#footer{
+    .elementor-widget-nav-menu{
+        ul{
+            li{
+                a{
+                    @media screen and (max-width: 767px) {
+                        justify-content: center;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+#cart_page .wc-proceed-to-checkout .checkout-button, #place_order, #blog .elementor-widget-wp-widget-search input[type="submit"] {
+    transition: all 0.3s ease;
+    background: var( --e-global-color-primary );
+    color: var( --e-global-color-1e02ab8 );
+    border-width: 0;
+    &:hover{
+      background: var( --e-global-color-secondary );
+    }
+}
