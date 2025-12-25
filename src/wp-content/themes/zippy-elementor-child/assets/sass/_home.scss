@@ -1,0 +1,38 @@
+#hero-banner{
+  > .e-con-inner{
+    position: relative;
+    .hero-title{
+      @media screen and (max-width: 767px) {
+        position: static;
+        transform: none;
+      }
+    }
+  }
+}
+
+#about_us_section{
+    .elementor-widget-image{
+        @media screen and (max-width: 767px) {
+            position: static;
+        }
+    }
+}
+
+.home-product-list{
+  .woocommerce-loop-product__title, .price, .add_to_cart_button, .product_type_simple{
+    display: none !important;
+  }
+  .woocommerce-loop-product__link{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    img{
+      margin: 0 !important;
+    }
+  }
+  &.pink-bg{
+    .woocommerce-loop-product__link{
+      background-color: var( --e-global-color-240d707 );
+    }
+  }
+}
